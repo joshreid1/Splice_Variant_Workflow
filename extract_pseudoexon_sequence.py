@@ -29,6 +29,8 @@ try:
 except Exception as e:
     sys.exit("biopython is required: pip install biopython\nError: " + str(e))
 
+# Default path
+HOMO_SAPIENS_FASTA = '/stornext/Bioinf/data/lab_bahlo/ref_db/human/hg38/GATK/fasta/Homo_sapiens_assembly38.fasta'
 
 def parse_coord(coord):
     # Accept formats like chr1:12345 or 1:12345
@@ -127,7 +129,7 @@ def main():
 
     # open fasta
     try:
-        fasta = pysam.FastaFile('/stornext/Bioinf/data/lab_bahlo/ref_db/human/hg38/GATK/fasta/Homo_sapiens_assembly38.fasta')
+        fasta = pysam.FastaFile(HOMO_SAPIENS_FASTA)
     except Exception as e:
         sys.exit(f"Failed to open fasta: {e}")
 
