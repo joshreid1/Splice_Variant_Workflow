@@ -109,7 +109,11 @@ predicted splice impacts relative to annotated gene transcripts.
 
 ## Pseudoexon Sequence Extraction
 
-Once a pseudoexon candidate has been identified, run `extract_pseudoexon_sequence.py` (scrip in this repository)    
+Please try the script via the Google Colab notebook here:
+
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1VbUHMF_GSOyvUH7g0bSoxf3VLXiGv4JK?usp=sharing)
+
+Once a pseudoexon candidate has been identified, run `extract_pseudoexon_sequence.py` (script in this repository)    
 to extract the predicted retained intronic sequence and check whether it introduces a **premature termination codon (PTC)** or causes a frameshift.
 
 **Usage:**
